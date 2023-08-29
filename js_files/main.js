@@ -1,4 +1,4 @@
-import { plusMinus } from "./plusMinus.js";
+import { staircase } from "./staircase.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + plusMinus([0, 0, -1, 1, 1]);
+showResult.innerHTML = "This is result: " + staircase(5);
