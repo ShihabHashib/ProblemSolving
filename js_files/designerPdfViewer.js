@@ -1,3 +1,5 @@
+// Designer Pdf Viewer Javascript HackerRank Solution
+
 // Remove Export if you want to paste in HackerRank
 export function designerPdfViewer(h, word) {
   const data = [];
