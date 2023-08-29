@@ -1,4 +1,4 @@
-import { simpleArraySum } from "./simpleArraySum.js";
+import { aVeryBigSum } from "./aVeryBigSum.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + simpleArraySum([-1, -3]);
+showResult.innerHTML = "This is result: " + aVeryBigSum([-1, -3]);
