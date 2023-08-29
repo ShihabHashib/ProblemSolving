@@ -1,4 +1,4 @@
-import { angryProfessor } from "./angryProfessor.js";
+import { simpleArraySum } from "./simpleArraySum.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + angryProfessor(3, [-1, -3, 4, 2]);
+showResult.innerHTML = "This is result: " + simpleArraySum([-1, -3]);
