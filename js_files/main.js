@@ -1,4 +1,4 @@
-import { utopianTree } from "./utopianTree.js";
+import { angryProfessor } from "./angryProfessor.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + utopianTree(5);
+showResult.innerHTML = "This is result: " + angryProfessor(3, [-1, -3, 4, 2]);
