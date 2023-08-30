@@ -1,4 +1,4 @@
-import { staircase } from "./staircase.js";
+import { viralAdvertising } from "./viralAdvertising.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + staircase(5);
+showResult.innerHTML = "This is result: " + viralAdvertising(5);
