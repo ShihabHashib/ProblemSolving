@@ -1,4 +1,4 @@
-// Simple Array Sum Javascript HackerRank Solution
+// The Hurdle Race Javascript HackerRank Solution
 
 // Remove 'export' if you want to paste in HackerRank
 export function hurdleRace(k, height) {
