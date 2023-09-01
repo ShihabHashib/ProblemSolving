@@ -1,4 +1,4 @@
-import { findDigits } from "./findDigits.js";
+import { extraLongFactorials } from "./extraLongFactorials.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + findDigits(25);
+showResult.innerHTML = "This is result: " + extraLongFactorials(25);
