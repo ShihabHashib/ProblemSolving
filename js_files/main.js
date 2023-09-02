@@ -1,4 +1,4 @@
-import { extraLongFactorials } from "./extraLongFactorials.js";
+import { repeatedString } from "./repeatedString.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + extraLongFactorials(25);
+showResult.innerHTML = "This is result: " + repeatedString("ceebbcb", 817723);
