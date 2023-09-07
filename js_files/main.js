@@ -1,9 +1,5 @@
-import { bigSorting } from "./bigSorting.js";
+import { beautifulTriplets } from "./beautifulTriplets.js";
 const showResult = document.querySelector(".app");
 
-const arr = [
-  8, 1, 2, 100, 12303479849857341718340192371, 3084193741082937,
-  3084193741082938, 111, 200,
-];
-
-showResult.innerHTML = "This is result: " + bigSorting(arr);
+showResult.innerHTML =
+  "This is result: " + beautifulTriplets(3, [1, 2, 4, 5, 7, 8, 10]);
