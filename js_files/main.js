@@ -1,5 +1,5 @@
-import { beautifulTriplets } from "./beautifulTriplets.js";
+import { permutationEquation } from "./permutationEquation.js";
 const showResult = document.querySelector(".app");
 
 showResult.innerHTML =
-  "This is result: " + beautifulTriplets(3, [1, 2, 4, 5, 7, 8, 10]);
+  "This is result: " + permutationEquation([4, 3, 5, 1, 2]);
