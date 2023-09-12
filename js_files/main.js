@@ -1,5 +1,4 @@
-import { permutationEquation } from "./permutationEquation.js";
+import { chocolateFeast } from "./chocolateFeast.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML =
-  "This is result: " + permutationEquation([4, 3, 5, 1, 2]);
+showResult.innerHTML = "This is result: " + chocolateFeast(15, 3, 2);
