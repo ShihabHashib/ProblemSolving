@@ -1,4 +1,4 @@
-import { camelcase } from "./camelcase.js";
+import { funnyString } from "./funnyString.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + camelcase("saveChangesInTheEditor");
+showResult.innerHTML = "This is result: " + funnyString("acxz");
