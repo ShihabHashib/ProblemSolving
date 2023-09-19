@@ -1,4 +1,4 @@
-import { funnyString } from "./funnyString.js";
+import { strangeCounter } from "./strangeCounter.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + funnyString("acxz");
+showResult.innerHTML = "This is result: " + strangeCounter(17);
