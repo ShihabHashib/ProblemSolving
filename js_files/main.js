@@ -1,4 +1,4 @@
-import { fairRations } from "./fairRations.js";
+import { libraryFine } from "./libraryFine.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + fairRations([2, 3, 4, 5, 6]);
+showResult.innerHTML = "This is result: " + libraryFine(2, 7, 1014, 1, 1, 1014);
