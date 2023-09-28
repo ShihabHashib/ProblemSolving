@@ -13,7 +13,7 @@ export function superReducedString(s) {
   }
 
   if (charecters.length === 0) {
-    return "No string";
+    return "Empty String";
   }
 
   const reducedStr = charecters.join("");
