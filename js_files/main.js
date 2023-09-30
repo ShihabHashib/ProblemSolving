@@ -1,4 +1,4 @@
-import { superReducedString } from "./superReducedString.js";
+import { minimumNumber } from "./minimumNumber.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML = "This is result: " + superReducedString("aaabccdddd");
+showResult.innerHTML = "This is result: " + minimumNumber(11, "#HackerRank");
