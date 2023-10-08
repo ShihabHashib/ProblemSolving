@@ -1,5 +1,5 @@
-import { caesarCipher } from "./caesarCipher.js";
+import { gemstones } from "./gemstones.js";
 const showResult = document.querySelector(".app");
 
 showResult.innerHTML =
-  "This is result: " + caesarCipher("abcdefghijklmnopqrstuvwxyz", 3);
+  "This is result: " + gemstones(["abcdde", "baccd", "eeabg"]);
