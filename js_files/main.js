@@ -1,5 +1,4 @@
-import { gemstones } from "./gemstones.js";
+import { beautifulBinaryString } from "./beautifulBinaryString.js";
 const showResult = document.querySelector(".app");
 
-showResult.innerHTML =
-  "This is result: " + gemstones(["abcdde", "baccd", "eeabg"]);
+showResult.innerHTML = "This is result: " + beautifulBinaryString("0101010");
