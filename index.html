@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -11,13 +11,19 @@
 </head>
 <body>
 
+<div class="nav">
+    <ul>
+        <a href="./index.html"><li>JS Solving</li></a>
+        <a href="./index-py.html"><li>Python Solving</li></a>
+    </ul>
+</div>
 
 <div class="main">
     <h2>Bellow is the result for:</h2>
     <div class="app"></div>
 </div>
 
-
-<script type="module" src="js_files/main.js"></script>    
+<!-- I used CSS module, make sure your browser supports it -->
+<script type="module" src="js_problems/main.js"></script>    
 </body>
 </html>

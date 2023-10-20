@@ -18,8 +18,34 @@ body {
   margin-top: -2.5rem;
 }
 
-.app {
+.app,
+.area {
   padding: 1rem;
   border: solid 2px #ffffff;
   border-radius: 6px;
+}
+
+.nav {
+  padding-top: 50px;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav li {
+  padding: 0 30px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline dashed #ffe841 2px;
 }
