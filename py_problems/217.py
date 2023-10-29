@@ -6,11 +6,11 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def containsDuplicate(nums):
-    arr = []
-    for i in nums:
-        if i in arr:
+    seen = set()
+    for num in nums:
+        if num in seen:
             return True
-        arr.append(i)
+        seen.add(num)
     return False
 
 
