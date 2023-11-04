@@ -6,15 +6,13 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def findMaxAverage(nums, k):
-    result = []
-    sortedArr = sorted(nums, key=lambda x: (-abs(x), x))
+    maxSum = currentSum = sum(nums[:k])
 
-    for num in sortedArr:
-        if not result or num != result[-1]:
-            result.append(num)
+    for i in range(k, len(nums)):
+        currentSum += nums[i] - nums[i - k]
+        maxSum = max(maxSum, currentSum)
 
-    total = sum(result[:k])
-    return total / k
+    return maxSum / k
 
 
 # END
