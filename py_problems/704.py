@@ -17,4 +17,4 @@ nums = [-1, 0, 3, 5, 9, 12]
 target = 2
 
 result = search(nums, target)
-display(result)
+display(result)  # imported from pyscript
