@@ -13,7 +13,7 @@ def intersection(nums1, nums2):
         if i in arr2:
             result.append(i)
 
-    print(result)
+    return result
 
 
 # END
