@@ -1,1 +1,2 @@
-js_files\.prettierrc
+js_problems/.prettierrc
+py_problems/00-test.py
