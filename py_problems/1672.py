@@ -9,7 +9,6 @@ def maximumWealth(accounts):
     maxList = set()
     for i in accounts:
         maxList.add(sum(i))
-
     return max(maxList)
 
 
