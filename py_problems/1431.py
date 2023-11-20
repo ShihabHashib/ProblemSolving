@@ -14,7 +14,7 @@ def kidsWithCandies(candies, extraCandies):
             result.append(True)
         else:
             result.append(False)
-    print(result)
+    return result
 
 
 # END
