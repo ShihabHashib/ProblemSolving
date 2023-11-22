@@ -37,3 +37,6 @@ def getMax(arr):
 
 # Find Index of same item in an array
 duplicatesIndex = [i for i, x in enumerate(array) if x == duplicateNum]
+
+# Converts To Binary
+binary = "{0:b}".format(i)
