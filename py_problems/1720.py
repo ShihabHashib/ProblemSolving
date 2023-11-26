@@ -6,7 +6,6 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def decode(encoded, first):
-
     target = [first]
 
     for i in range(len(encoded)):
