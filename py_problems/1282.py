@@ -10,7 +10,6 @@ def groupThePeople(groupSizes):
     groups = {}
 
     for i, size in enumerate(groupSizes):
-        print(i, size)
         if size not in groups:
             groups[size] = []
 
