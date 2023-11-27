@@ -6,6 +6,7 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def getRow(rowIndex):
+
     triAngle = []
 
     for i in range(rowIndex + 1):
