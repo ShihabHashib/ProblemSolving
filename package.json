@@ -1,0 +1,13 @@
+{
+  "name": "problemsolving",
+  "version": "1.0.0",
+  "description": "Welcome to my GitHub repository where I regularly share my problem-solving solutions for HackerRank and LeetCode.com. This repository includes solutions in JavaScript and Python, organized into dedicated folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

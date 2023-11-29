@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "./ts_problems/build_folder",
+      "rootDir": "./ts_problems",
+      "strict": true
+    },
+    "include": ["ts_problems/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
