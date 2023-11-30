@@ -6,24 +6,17 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def countKDifference(nums):
-    num_count = {}
     count = 0
-
-    for num in nums:
-        num_count[num] = num_count.get(num, 0) + 1
-
-    for num in num_count:
-        if k > 0 and num + k in num_count:
-            count += min(num_count[num], num_count[num + k])
-        elif k == 0 and num_count[num] > 1:
-            count += num_count[num] * (num_count[num] - 1) // 2
-
+    for i in range(len(nums)):
+        for j in range(len(nums)):
+            if abs(nums[i] - nums[j] == k):
+                count += 1
     return count
 
 
 # END
-nums = [1, 2, 2, 1]
-k = 1
+nums = [1, 3]
+k = 3
 
 result = countKDifference(nums)
 display(result)
