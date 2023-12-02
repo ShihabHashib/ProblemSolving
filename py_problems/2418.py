@@ -6,7 +6,8 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def sortPeople(names, heights):
-    sortedPeople = sorted({n: a for n, a in zip(heights, names)}, reverse=True)
+    sortedPeople = sorted(zip(names, heights),
+                          key=lambda x: x[1], reverse=True)
     sortedNames = [name for name, _ in sortedPeople]
     return sortedNames
 
