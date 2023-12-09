@@ -8,7 +8,6 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 def findPeaks(mountain):
     result = []
     for i in range(1, len(mountain) - 1):
-        print(i)
         if mountain[i] > mountain[i - 1] and mountain[i] > mountain[i + 1]:
             result.append(i)
 
