@@ -6,7 +6,7 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def twoOutOfThree(nums1, nums2, nums3):
-    return set(nums1) & set(nums2) or set(nums2) & set(nums3) or set(nums1) & set(nums3)
+    return set(nums1) & set(nums2) | set(nums2) & set(nums3) | set(nums1) & set(nums3)
 
 # END
 
