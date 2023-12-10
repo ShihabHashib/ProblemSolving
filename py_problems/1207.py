@@ -9,6 +9,7 @@ def uniqueOccurrences(arr):
     occurrences = {}
     for i in arr:
         occurrences[i] = occurrences.get(i, 0) + 1
+
     return len(set(occurrences.values())) == len(occurrences)
 
 
