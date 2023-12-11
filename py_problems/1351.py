@@ -2,25 +2,16 @@ import sys
 sys.path.insert(1, "../assets/js/pyscript.js")
 
 # ProblemSolving for LeetCode Python Start
-# 1475. Final Prices With a Special Discount in a Shop
+# 1351. Count Negative Numbers in a Sorted Matrix
 
 
-def finalPrices(prices):
-    result = []
-
-    for i in range(len(prices)):
-        for j in range(1, len(prices)):
-            if j > i and prices[j] <= prices[i]:
-                result.append(prices[i] - prices[j])
-                break
-        else:
-            result.append(prices[i])
-
-    return result
+def countNegatives(grid):
+    flattedList = sum(grid, [])
+    return sum(n < 0 for n in flattedList)
 
 
 # END
-prices = [8, 4, 6, 2, 3]
+grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]]
 
-result = finalPrices(prices)
+result = countNegatives(grid)
 display(result)
