@@ -6,11 +6,20 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def maximumUnits(boxTypes, truckSize):
-    
+    result = 0
+    boxTypes.sort(key=lambda x: x[1], reverse=True)
+
+    for i, units in boxTypes:
+        while i and truckSize > 0:
+            result += units
+            i -= 1
+            truckSize -= 1
+
+    return result
 
 
 # END
-boxTypes = [[1,3],[2,2],[3,1]]
+boxTypes = [[1, 3], [2, 2], [3, 1]]
 truckSize = 4
 
 result = maximumUnits(boxTypes, truckSize)
