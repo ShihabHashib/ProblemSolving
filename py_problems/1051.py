@@ -6,6 +6,14 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def heightChecker(heights):
+    count = 0
+    sortedHeight = sorted(heights)
+
+    for i in range(len(heights)):
+        if heights[i] != sortedHeight[i]:
+            count += 1
+
+    return count
 
 
 # END
