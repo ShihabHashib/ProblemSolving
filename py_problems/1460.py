@@ -6,7 +6,7 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def canBeEqual(target, arr):
-    
+    return sorted(target) == sorted(arr)
 
 
 # END
