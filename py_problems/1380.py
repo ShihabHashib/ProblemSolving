@@ -2,19 +2,18 @@ import sys
 sys.path.insert(1, "../assets/js/pyscript.js")
 
 # ProblemSolving for LeetCode Python Start
-# 00. Test Code
+# 1380. Lucky Numbers in a Matrix
 
 
-def namef(matrix):
-    m, n = len(matrix), len(matrix[0])
-
+def luckyNumbers(matrix):
     minRow = [min(x) for x in matrix]
-    maxCol = max(matrix, key=max)
+    maxCol = [max(i) for i in zip(*matrix)]
 
-    print(maxCol)
+    return set(minRow) & set(maxCol)
 
 
+# END
 matrix = [[3, 7, 8], [9, 11, 13], [15, 16, 17]]
 
-result = namef(matrix)
+result = luckyNumbers(matrix)
 display(result)
