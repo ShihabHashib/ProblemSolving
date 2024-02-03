@@ -10,6 +10,8 @@ def mostWordsFound(sentences):
 
 
 # END
+
+
 sentences = ["please wait", "continue to fight", "continue to win"]
 result = mostWordsFound(sentences)
 display(result)
