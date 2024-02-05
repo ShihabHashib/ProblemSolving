@@ -15,9 +15,7 @@ def numberOfEmployeesWhoMetTarget(hours, target):
     return count
 
 
-# END
-
-
+# END Code
 
 hours = [5, 1, 4, 2, 2]
 target = 6
