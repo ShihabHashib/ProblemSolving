@@ -16,6 +16,9 @@ def numberOfEmployeesWhoMetTarget(hours, target):
 
 
 # END
+
+
+
 hours = [5, 1, 4, 2, 2]
 target = 6
 
