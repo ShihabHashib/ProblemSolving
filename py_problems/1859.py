@@ -13,7 +13,7 @@ def sortSentence(s):
     for i in sortedArr:
         result += i[1:] + " "
 
-    return result
+    return result[:-1]
 
 
 # END
