@@ -5,16 +5,13 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 # 00. Test Code
 
 
-def namef(matrix):
-    m, n = len(matrix), len(matrix[0])
-
-    minRow = [min(x) for x in matrix]
-    maxCol = max(matrix, key=max)
-
-    print(maxCol)
+def two_sum(nums, target):
+    print('delete')
 
 
-matrix = [[3, 7, 8], [9, 11, 13], [15, 16, 17]]
+# Example usage
+nums = [4, 5, 6, 7, 15, 31, 55, 12, 2, 54]
+target = 38
+result = two_sum(nums, target)
 
-result = namef(matrix)
 display(result)
