@@ -2,7 +2,7 @@ import sys
 sys.path.insert(1, "../../assets/js/pyscript.js")
 
 # Algorithm, Methods and Technique
-# Two-Pointer Algorithm
+# Hashing Python Dictionary
 
 
 def count_frequency(nums):
