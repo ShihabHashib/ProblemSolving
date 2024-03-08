@@ -6,10 +6,16 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def maxFrequencyElements(nums):
-    from collections import Counter
-    dic = Counter(nums)
-    maxNum = max(dic.values())
-    return sum(filter(lambda x: x == maxNum, dic.values()))
+    countInc = {}
+
+    for i in nums:
+        if i in countInc:
+            countInc[i] += 1
+        else:
+            countInc[i] = 1
+
+    maxNum = max(countInc.values())
+    return sum(filter(lambda x: x == maxNum, countInc.values()))
 
 
 # END
