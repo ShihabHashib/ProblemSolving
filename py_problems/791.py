@@ -14,8 +14,6 @@ def countDigits(order, s):
         else:
             dic[i] = 1
 
-    print(dic)
-
     for i in order:
         if i in dic:
             result += i * dic[i]
@@ -25,7 +23,6 @@ def countDigits(order, s):
         if value > 0:
             result += i * value
 
-    print(dic)
     return result
 
 

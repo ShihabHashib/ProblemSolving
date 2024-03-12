@@ -53,7 +53,7 @@ class LinkedList:
 
 
 # Create linked list from array
-arr = [4, 5, 6, 7, 15, 31, 55, 12, 2, 54, 3]
+arr = [1, 2, -3, 3, 1]
 ll = LinkedList()
 for num in arr:
     ll.append(num)
@@ -61,6 +61,3 @@ for num in arr:
 # Display original linked list
 print("Given Linked List:")
 ll.dis_LinkedList()
-
-
-print(ll.find_mid())
