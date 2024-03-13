@@ -7,7 +7,7 @@ Welcome to my GitHub repository where I regularly share my problem-solving solut
 - **py_problems:** Contains Python solutions to various problems.
 - **ts_problems** Contains TypeScript solutions to various problems.
 
-<img src="https://github.com/ShihabHashib/ProblemSolving/blob/e65734ad8ac4de28a30eb75e6a08f1228a48e7b0/assets/img/screenshot.png">
+<img src="https://github.com/ShihabHashib/ProblemSolving/blob/c2e642fd7d12d4d6979658227b3fb95e0766e05c/assets/img/screenshot.png">
 
 ## Viewing Results
 
