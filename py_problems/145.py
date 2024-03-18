@@ -2,21 +2,21 @@ import sys
 sys.path.insert(1, "../assets/js/pyscript.js")
 
 # ProblemSolving for LeetCode Python Start
-# 144. Binary Tree Preorder Traversal
+# 145. Binary Tree Postorder Traversal
 
 
-def preorderTraversal(root):
+def postorderTraversal(root):
     result = []
 
-    def preOrder(root):
+    def postOrder(root):
         if not root:
             return
 
+        postOrder(root.left)
+        postOrder(root.right)
         result.append(root.val)
-        preOrder(root.left)
-        preOrder(root.right)
 
-    preOrder(root)
+    postOrder(root)
     return result
 
 
