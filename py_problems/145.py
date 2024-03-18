@@ -6,6 +6,7 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def postorderTraversal(root):
+
     result = []
 
     def postOrder(root):
