@@ -6,7 +6,6 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def findComplement(num):
-    binary = "{0:b}".format(num)
     return int("".join(['1' if char == '0' else '0' for char in str("{0:b}".format(num))]), 2)
 
 

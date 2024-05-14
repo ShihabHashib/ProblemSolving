@@ -41,6 +41,9 @@ duplicatesIndex = [i for i, x in enumerate(array) if x == duplicateNum]
 # Converts To Binary
 binary = "{0:b}".format(i)
 
+
+    
+
 # ===================
 matrix = [[3, 7, 8], [9, 11, 13], [15, 16, 17]]
 
@@ -54,5 +57,7 @@ minRow = [min(x) for x in matrix]  # print: [3, 9, 15]
 maxCol = max(matrix, key=max)  # print: [15, 16, 17]
 # OR
 [max(i) for i in zip(*matrix)]  # print: [15, 16, 17]
+
+total = sum(matrix, []).count(1) # [3, 7, 8, 9, 11, 13, 15, 16, 17]
 
 # ===================
