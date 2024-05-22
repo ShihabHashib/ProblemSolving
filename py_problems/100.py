@@ -2,32 +2,21 @@ import sys
 sys.path.insert(1, "../assets/js/pyscript.js")
 
 # ProblemSolving for LeetCode Python Start
-# 69. Sqrt(x)
+# 100. Same Tree
 
 
-def sqRt(x):
-    if x == 0:
-        return 0
+def isSameTree(self, p, q):
+        if not p and not q:
+            return True
 
-    left, right = 1, x
-
-    while left <= right:
-        mid = left + (right - left) // 2
-        square = mid * mid
-
-        if square == x:
-            return mid
-        elif square < x:
-            left = mid + 1
-            result = mid
-        else:
-            right = mid - 1
-
-    return result
+        if not p or not q:
+            return False
+        
+        return p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
 
 # END
-
-x = 4
-result = sqRt(x)
+p = [1,2,3]
+q = [1,2,3]
+result = isSameTree(p, q)
 display(result)
