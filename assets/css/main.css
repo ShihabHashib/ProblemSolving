@@ -37,15 +37,23 @@ body {
   list-style: none;
 }
 
-.nav li {
-  padding: 0 30px;
-}
-
 .nav a {
+  margin: 0 30px;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
 }
 
-.nav a:hover {
-  text-decoration: underline dashed #ffe841 2px;
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px dashed #ffe841;
+  transition: width 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav a:hover::after {
+  width: 100%;
 }
