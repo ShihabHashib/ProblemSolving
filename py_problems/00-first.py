@@ -55,9 +55,30 @@ minRow = [min(x) for x in matrix]  # print: [3, 9, 15]
 
 # Find minmum in Row
 maxCol = max(matrix, key=max)  # print: [15, 16, 17]
+
 # OR
 [max(i) for i in zip(*matrix)]  # print: [15, 16, 17]
 
+# Combine every sub array to one arre
 total = sum(matrix, []).count(1) # [3, 7, 8, 9, 11, 13, 15, 16, 17]
+
+# Create number of array inside array 
+result = [[] for _ in range(3)] #[[1],[2],[3]]
+
+# ===================
+
+# SET
+
+fre = {}
+nums = [1, 5, 1, 6, 1, 7]
+
+for i in nums:
+    if i in fre:
+        fre[i] += 1
+    else:
+        fre[i] = 1  
+        
+print(fre) #{1:3, 5:1, 6:1, 7:1}
+
 
 # ===================
