@@ -17,7 +17,6 @@ def findMatrix(nums):
     result = [[] for _ in range(max(fre.values()))]
 
     for num, count in fre.items():
-        print(num, count)
         for i in range(count):
             result[i].append(num)
 
