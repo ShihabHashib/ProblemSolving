@@ -14,6 +14,7 @@ def frequencySort(s):
         else:
             fre[i] = 1 
     
+    #Sort items by frequency - descending and add in string
     return ''.join([char * freq for char, freq in sorted(fre.items(), key=lambda x: (-x[1], x[0]))])
 
 
