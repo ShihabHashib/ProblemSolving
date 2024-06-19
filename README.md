@@ -29,6 +29,6 @@ Welcome to my GitHub repository where I regularly share my problem-solving solut
 Example: `<py-script src="./py_problems/100.py"></py-script>`
 
 ## Contributing
-If you have additional solutions or improvements to existing ones, feel free to contribute! Follow the standard GitHub Fork and Pull Request workflow.
+Feel free to contribute if you have additional solutions or improvements to existing ones! Follow the standard GitHub Fork and Pull Request workflow.
 
 Happy coding!!!
