@@ -21,6 +21,7 @@ def mergeAlternately(word1, word2):
 
 
 word1 = "abc"
+
 word2 = "pqr"
 result = mergeAlternately(word1, word2)
 display(result)
