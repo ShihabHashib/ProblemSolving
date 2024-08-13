@@ -6,13 +6,13 @@ sys.path.insert(1, "../assets/js/pyscript.js")
 
 
 def processQueries(queries, m):
-    P = list(range(1, m + 1))
+    p = list(range(1, m + 1))
     result = []
     
     for i in queries:
-        pos = P.index(i)
+        pos = p.index(i)
         result.append(pos)
-        P.insert(0, P.pop(pos))
+        p.insert(0, p.pop(pos))
     
     return result
 
