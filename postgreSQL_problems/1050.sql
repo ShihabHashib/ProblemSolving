@@ -1,7 +1,6 @@
 -- ProblemSolving for LeetCode SQL
--- 197. Rising Temperature
+-- 1050. Actors and Directors Who Cooperated At Least Three Times
 
-SELECT c.id FROM weather c
-JOIN weather p
-ON c.recordDate = p.recordDate + 1
-WHERE c.temperature > p.temperature
+SELECT actor_id, director_id FROM ActorDirector 
+GROUP BY actor_id, director_id
+HAVING COUNT(timestamp) > 2;
