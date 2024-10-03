@@ -1,7 +1,7 @@
 -- ProblemSolving for LeetCode SQL
--- 197. Rising Temperature
+-- 511. Game Play Analysis I
 
-SELECT c.id FROM weather c
-JOIN weather p
-ON c.recordDate = p.recordDate + 1
-WHERE c.temperature > p.temperature
+SELECT player_id, MIN(event_date) as first_login 
+FROM Activity 
+GROUP BY player_id 
+ORDER BY player_id
