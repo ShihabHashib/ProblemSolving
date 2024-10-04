@@ -1,6 +1,7 @@
 -- ProblemSolving for LeetCode SQL
--- 1050. Actors and Directors Who Cooperated At Least Three Times
+-- 1148. Article Views I
 
-SELECT actor_id, director_id FROM ActorDirector 
-GROUP BY actor_id, director_id
-HAVING COUNT(timestamp) > 2;
+SELECT distinct author_id as id
+FROM Views
+WHERE author_id = viewer_id 
+ORDER BY author_id
