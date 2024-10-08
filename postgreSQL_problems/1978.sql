@@ -1,10 +1,10 @@
 -- ProblemSolving for LeetCode SQL
--- 619. Biggest Single Number
+-- 1978. Employees Whose Manager Left the Company
 
-SELECT MAX(num) as num
-FROM (
-    SELECT num
-    FROM MyNumbers
-    GROUP BY num
-    HAVING COUNT(*) = 1
-) AS n
+SELECT employee_id 
+FROM Employees 
+WHERE manager_id not in (
+    SELECT employee_id 
+    FROM Employees
+    ) AND salary < 30000
+ORDER BY employee_id 
