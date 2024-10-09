@@ -1,7 +1,6 @@
 -- ProblemSolving for LeetCode SQL
--- 596. Classes More Than 5 Students
+-- 1693. Daily Leads and Partners
 
-SELECT class
-FROM Courses 
-GROUP BY class
-HAVING COUNT(class) > 4
+SELECT date_id, make_name, COUNT(DISTINCT lead_id) as unique_leads , count(DISTINCT partner_id) as unique_partners
+FROM DailySales 
+GROUP BY date_id, make_name
