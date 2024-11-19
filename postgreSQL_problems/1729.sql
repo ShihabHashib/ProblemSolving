@@ -1,12 +1,7 @@
 -- ProblemSolving for LeetCode SQL
--- 626. Exchange Seats
+-- 1729. Find Followers Count
 
-SELECT(
-    CASE
-        WHEN id % 2 = 1 and id = (SELECT MAX(id) from Seat) THEN id
-        WHEN id % 2 = 1 THEN id + 1
-        WHEN id % 2 = 0 THEN id - 1
-    END 
-) as id, student
-FROM Seat
-ORDER BY id
+SELECT user_id, COUNT(*) as followers_count
+FROM Followers
+GROUP BY user_id
+ORDER BY user_id
